@@ -1,0 +1,8 @@
+export enum FileEnum {
+  MAX_SIZE_IMAGE = 1 * 1024 * 1024, //1MB
+  MAX_SIZE_VIDEO = 200 * 1024 * 1024, //200MB
+  MAX_QTY_IMAGE = 5,
+  MAX_QTY_VIDEO = 1,
+  MAX_SIZE_CSV = 1 * 1024 * 1024 * 100, //100MB
+  MAX_QTY_CSV = 1,
+}

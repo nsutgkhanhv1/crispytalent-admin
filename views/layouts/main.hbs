@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta name="description" content="Spruha -  Admin Panel HTML Dashboard Template">
+  <meta name="author" content="Spruko Technologies Private Limited">
+  <meta name="keywords"
+    content="admin,dashboard,panel,bootstrap admin template,bootstrap dashboard,dashboard,themeforest admin dashboard,themeforest admin,themeforest dashboard,themeforest admin panel,themeforest admin template,themeforest admin dashboard,cool admin,it dashboard,admin design,dash templates,saas dashboard,dmin ui design">
+  <meta name="_csrf" content="{{csrfToken}}" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/public/libraries/img/brand/favicon.ico" type="image/x-icon" />
+
+  <!-- Title -->
+  <title>{{#if title}}{{title}}{{else}}Admin page - NestJS MVC{{/if}}</title>
+
+  {{> css}}
+
+</head>
+
+<body class="main-body leftmenu">
+
+  <!-- Loader -->
+  <div id="global-loader">
+    <img src="/public/libraries/img/loader.svg" class="loader-img" alt="Loader">
+  </div>
+  <!-- End Loader -->
+
+
+  <!-- Page -->
+  <div class="page">
+
+    <!-- Sidemenu -->
+    {{> sidemenu}}
+    <!-- End Sidemenu -->
+
+    <!-- Main Header-->
+    {{> header}}
+    <!-- Mobile-header closed -->
+
+    <!-- Main Content-->
+    <div class="main-content side-content pt-0">
+
+      <div class="container-fluid">
+        <div class="inner-body">
+          {{{_sections.page_header}}}
+          {{{ body }}}
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content-->
+
+    <!-- Main Footer-->
+    {{> footer }}
+    <!--End Footer-->
+
+    <!-- Sidebar -->
+    {{> sidebar}}
+    <!-- End Sidebar -->
+
+  </div>
+  <!-- End Page -->
+
+  <!-- Start Modal -->
+  <div aria-hidden="false" role="dialog" aria-labelledby="exampleModalLongTitle"
+    class="modal fade in bd-example-modal-lg" id="detailModal" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="finishModalLabel" class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div id='modal_content'></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+  <!-- Back-to-top -->
+  <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+
+  {{> js}}
+
+
+
+
+</body>
+
+</html>

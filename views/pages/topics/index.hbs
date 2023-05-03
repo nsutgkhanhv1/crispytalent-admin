@@ -1,0 +1,104 @@
+{{#section 'css_scope'}}
+<!-- Owl-carousel css-->
+<link rel="icon" href="/public/libraries/img/brand/favicon.ico" type="image/x-icon" />
+
+<!-- Internal DataTables css-->
+<link href="/public/libraries/plugins/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="/public/libraries/plugins/datatable/responsivebootstrap4.min.css" rel="stylesheet" />
+<link href="/public/libraries/plugins/datatable/fileexport/buttons.bootstrap4.min.css" rel="stylesheet" />
+
+<!-- Select2 css -->
+<link href="/public/libraries/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+<!-- Dashboard custom css -->
+<link href="/public/app/css/custom.css" rel="stylesheet">
+
+
+<!-- Sidemenu css-->
+
+{{/section}}
+
+<!-- Javascript scope -->
+{{#section 'javascript_scope'}}
+
+
+
+<!-- Select2 js-->
+<script src="/public/libraries/plugins/select2/js/select2.min.js"></script>
+<!-- Internal Data Table js -->
+<script src="/public/libraries/plugins/datatable/jquery.dataTables.min.js"></script>
+<script src="/public/libraries/plugins/datatable/dataTables.bootstrap4.min.js"></script>
+<script src="/public/libraries/plugins/datatable/dataTables.responsive.min.js"></script>
+<!-- Apis -->
+<script src="/public/app/js/topics.js"></script>
+
+
+
+<!-- Perfect-scrollbar js -->
+</body>
+
+<!-- Internal Dashboard js-->
+
+
+{{/section}}
+
+{{#section 'page_header'}}
+<!-- Page Header -->
+<div class="page-header">
+    <div>
+        <h2 class="main-content-title tx-24 mg-b-5">Topics</h2>
+    </div>
+</div>
+<!-- End Page Header -->
+{{/section}}
+
+
+<div class="row row-sm">
+    <div class="col-lg-12">
+        <div class="card custom-card overflow-hidden">
+
+            <div class="card-body">
+                <div id="import-topic-form" class="row row-xs align-items-center mb-5">
+                    <label for="excel-input" class="main-content-label mb-1">Import : </label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file" id="excel-input" name="files" onchange="input(event)" />
+                    </div>
+                    <button class="btn ripple btn-primary pd-x-30 mg-r-5" onclick="importTopic(event)">Import</button>
+                </div>
+                <div>
+                    <div class="row row-xs align-items-center">
+                        <h6 class="main-content-label mb-1">Filters : </h6>
+                        <div class="col-md-4">
+                            <input class="form-control" id="filters-input" placeholder="Enter keywords" type="text">
+                        </div>
+                        <button class="btn ripple btn-primary pd-x-30 mg-r-5"
+                            id="btn-search-by-filters">Seach</button><br>
+                        <span class="error invalid-feedback" id="error-filters-currencies" style="display:none"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap currencies-data-table" id="topics_data">
+                        <thead>
+                            <tr>
+                                <th class="wd-10p">ID</th>
+                                <th class="wd-15p">Question</th>
+                                <th class="wd-15p">Answer</th>
+                                <th class="wd-15p">Test ID</th>
+                                <th class="wd-15p">Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+</script>

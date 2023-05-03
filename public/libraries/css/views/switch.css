@@ -1,0 +1,168 @@
+/*
+ *
+ *
+ *
+ * Bootstrap 4 Component - Custom switch
+ * Version: 1.1.2
+ * Copyright (c) 2017-18 Martin Haubek
+ *
+ *
+ *
+ */
+.custom-switch {
+  line-height: 12px;
+}
+.custom-switch .custom-switch-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-switch .custom-switch-input,
+.custom-switch .custom-switch-input:after,
+.custom-switch .custom-switch-input:before,
+.custom-switch .custom-switch-input *,
+.custom-switch .custom-switch-input *:after,
+.custom-switch .custom-switch-input *:before,
+.custom-switch .custom-switch-input + .custom-switch-btn {
+  box-sizing: border-box;
+}
+.custom-switch .custom-switch-input:selection,
+.custom-switch .custom-switch-input:after:selection,
+.custom-switch .custom-switch-input:before:selection,
+.custom-switch .custom-switch-input *:selection,
+.custom-switch .custom-switch-input *:after:selection,
+.custom-switch .custom-switch-input *:before:selection,
+.custom-switch .custom-switch-input + .custom-switch-btn:selection {
+  background: none;
+}
+.custom-switch .custom-switch-input + .custom-switch-btn {
+  outline: 0;
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 68px;
+  height: 38px;
+  margin: 0;
+  padding: 4px;
+  background: #adb5bd;
+  border-radius: 76px;
+  transition: all 150ms ease;
+}
+.custom-switch .custom-switch-input + .custom-switch-btn:after,
+.custom-switch .custom-switch-input + .custom-switch-btn:before {
+  position: relative;
+  display: block;
+  content: '';
+  width: 29px;
+  height: 29px;
+}
+.custom-switch .custom-switch-input + .custom-switch-btn:after {
+  left: 2px;
+  border-radius: 50%;
+  background: white;
+  transition: all 150ms ease;
+}
+.custom-switch .custom-switch-input + .custom-switch-btn:before {
+  display: none;
+}
+.custom-switch .custom-switch-input + .custom-switch-btn.text-hide {
+  top: -0.8rem;
+}
+.custom-switch .custom-switch-input:checked + .custom-switch-btn {
+  background: #28a745;
+}
+.custom-switch .custom-switch-input:checked + .custom-switch-btn:after {
+  left: 30px;
+}
+.custom-switch
+  .custom-switch-input:checked
+  + .custom-switch-btn
+  ~ .custom-switch-content-checked {
+  opacity: 1;
+  height: auto;
+}
+.custom-switch
+  .custom-switch-input:checked
+  + .custom-switch-btn
+  ~ .custom-switch-content-unchecked {
+  display: none;
+  opacity: 0;
+  height: 0;
+}
+.custom-switch
+  .custom-switch-input:not(:checked)
+  + .custom-switch-btn
+  ~ .custom-switch-content-checked {
+  display: none;
+  opacity: 0;
+  height: 0;
+}
+.custom-switch
+  .custom-switch-input:not(:checked)
+  + .custom-switch-btn
+  ~ .custom-switch-content-unchecked {
+  opacity: 1;
+  height: auto;
+}
+.custom-switch .custom-switch-input[disabled] + .custom-switch-btn {
+  background: rgba(173, 181, 189, 0.6);
+  cursor: default;
+}
+.custom-switch .custom-switch-input[disabled]:checked + .custom-switch-btn {
+  background: rgba(40, 167, 69, 0.4);
+}
+.custom-switch .custom-switch-input:not([disabled]):focus ~ .custom-switch-btn {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 0.25rem rgba(56, 123, 189, 0.25);
+}
+.custom-switch .custom-switch-input[required] ~ .custom-switch-btn {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 0.125rem rgba(220, 53, 69, 0.5);
+}
+.custom-switch .custom-switch-form-text {
+  display: inline-block;
+  height: 38px;
+  margin-left: 0.5rem;
+  line-height: 38px;
+  vertical-align: top;
+}
+
+.custom-switch-sm {
+  line-height: 11px;
+}
+.custom-switch-sm .custom-switch-input + .custom-switch-btn {
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 62px;
+}
+.custom-switch-sm .custom-switch-input + .custom-switch-btn:after,
+.custom-switch-sm .custom-switch-input + .custom-switch-btn:before {
+  width: 24px;
+  height: 24px;
+}
+.custom-switch-sm .custom-switch-input + .custom-switch-btn:after {
+  left: 2px;
+}
+.custom-switch-sm .custom-switch-input:checked + .custom-switch-btn:after {
+  left: 29px;
+}
+.custom-switch-sm .custom-switch-form-text {
+  height: 31px;
+  margin-left: 0.5rem;
+  line-height: 31px;
+}
+.custom-switch-sm.custom-switch-label-yesno
+  .custom-switch-input
+  + .custom-switch-btn {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='31'%3E%3Ctext x='32.87671' y='19.375' font-size='11px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji' fill='%23fff'%3ENo%3C/text%3E%3C/svg%3E");
+}
+.custom-switch-sm.custom-switch-label-yesno
+  .custom-switch-input:checked
+  + .custom-switch-btn {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='31'%3E%3Ctext x='8.57143' y='19.375' font-size='11px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji' fill='%23fff'%3EYes%3C/text%3E%3C/svg%3E");
+}

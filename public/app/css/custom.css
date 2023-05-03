@@ -1,0 +1,22 @@
+.currency-item:hover {
+  background-color: rgb(180, 178, 178);
+  color: #fff;
+}
+
+.action-trigger-modal {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.action-delete {
+  color: red;
+}
+
+.action-update {
+  color: green;
+}
+
+#output-upload {
+  max-width: 200px;
+  max-height: 200px;
+}

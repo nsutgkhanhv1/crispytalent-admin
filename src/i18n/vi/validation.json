@@ -1,0 +1,10 @@
+{
+  "NOT_EMPTY": "{property} không thể rỗng",
+  "IS_STRING": "{property} phải là một chuỗi",
+  "IS_BOOLEAN": "{property} phải là một boolean",
+  "IS_NUMBER": "{property} phải là một số",
+  "INVALID_EMAIL": "địa chỉ email không hợp lệ",
+  "INVALID_BOOLEAN": "{property} không phải là một boolean",
+  "MIN": "{property} với gia trị: \"{value}\" cần phải là ít nhất {constraints.0}, và {message}",
+  "MAX": "{property} với giá trị: \"{value}\" cần phải là nhỏ hơn {constraints.0}, và {message}"
+}

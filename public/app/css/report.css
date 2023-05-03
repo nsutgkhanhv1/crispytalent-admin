@@ -1,0 +1,52 @@
+.text-grey {
+  color: #5e6e82;
+}
+.growth-rate-up {
+  color: #00d27a;
+}
+.growth-rate-down {
+  color: red;
+}
+.translate-middle {
+  transform: translateX(-50%) translateY(-50%) !important;
+}
+.start-50 {
+  left: 50%;
+}
+.top-50 {
+  top: 50%;
+}
+.fs-3 {
+  font-size: 1.728rem !important;
+}
+.fs-2 {
+  font-size: 1.2rem !important;
+}
+.fs--2 {
+  font-size: 0.6944444444rem !important;
+}
+input[name='daterange'] {
+  padding: 4px 13px;
+  border: 1px solid #2c7be5;
+  border-radius: 4px;
+  outline: none;
+}
+input[name='daterange']:hover {
+  cursor: pointer;
+}
+.translate-middle-y {
+  -webkit-transform: translateY(-50%) !important;
+  -ms-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
+}
+.ps-4 {
+  padding-left: 1.8rem !important;
+}
+.fe-calendar {
+  color: #2c7be5;
+}
+@media (min-width: 992px) {
+  .border-lg-0 {
+    border: 0 !important;
+  }
+}

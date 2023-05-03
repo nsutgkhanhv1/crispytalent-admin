@@ -1,0 +1,84 @@
+{{#section 'css_scope'}}
+<!-- Owl-carousel css-->
+<link rel="icon" href="/public/libraries/img/brand/favicon.ico" type="image/x-icon" />
+
+<!-- Internal DataTables css-->
+<link href="/public/libraries/plugins/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="/public/libraries/plugins/datatable/responsivebootstrap4.min.css" rel="stylesheet" />
+<link href="/public/libraries/plugins/datatable/fileexport/buttons.bootstrap4.min.css" rel="stylesheet" />
+
+<!-- Select2 css -->
+<link href="/public/libraries/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+<!-- Dashboard custom css -->
+<link href="/public/app/css/custom.css" rel="stylesheet">
+
+
+<!-- Sidemenu css-->
+
+{{/section}}
+
+<!-- Javascript scope -->
+{{#section 'javascript_scope'}}
+
+
+
+<!-- Select2 js-->
+<script src="/public/libraries/plugins/select2/js/select2.min.js"></script>
+<!-- Internal Data Table js -->
+<script src="/public/libraries/plugins/datatable/jquery.dataTables.min.js"></script>
+<script src="/public/libraries/plugins/datatable/dataTables.bootstrap4.min.js"></script>
+<script src="/public/libraries/plugins/datatable/dataTables.responsive.min.js"></script>
+<!-- Apis -->
+<script src="/public/app/js/results.js"></script>
+
+
+
+<!-- Perfect-scrollbar js -->
+</body>
+
+<!-- Internal Dashboard js-->
+
+
+{{/section}}
+
+{{#section 'page_header'}}
+<!-- Page Header -->
+<div class="page-header">
+    <div>
+        <h2 class="main-content-title tx-24 mg-b-5">Results</h2>
+    </div>
+</div>
+<!-- End Page Header -->
+{{/section}}
+
+
+<div class="row row-sm">
+    <div class="col-lg-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <button class="btn ripple btn-primary pd-x-30 mg-r-5" style="float: right;"
+                    id="btn-export">Export</button>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap currencies-data-table" id="results_data">
+                        <thead>
+                            <tr>
+                                <th class="wd-10p">ID</th>
+                                <th class="wd-15p">Score</th>
+                                <th class="wd-15p">Note</th>
+                                <th class="wd-15p">User</th>
+                                <th class="wd-15p">Test</th>
+                                <th class="wd-15p">Assessment</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+</script>
